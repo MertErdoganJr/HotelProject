@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HotelProject.DataAccessLayer
+namespace HotelProject.DtoLayer
 {
     public class Class1
     {
