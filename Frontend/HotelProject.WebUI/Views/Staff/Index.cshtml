@@ -4,25 +4,25 @@
     Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
 }
 
-<table class="table table-bordered">
+<table class="table table-striped">
     <tr>
         <th>#</th>
-        <th>Personel Adı</th>
-        <th>Personel Ünvanı</th>
-        <th>Sil</th>
-        <th>Güncelle</th>
-        <th>Detaylar</th>
+        <th>Staff Name-Surname</th>
+        <th>Staff Title</th>
+        <th>Delete</th>
+        <th>Update</th>
+        <th>Details</th>
     </tr>
-    @foreach(var item in Model)
+    @foreach (var item in Model)
     {
         <tr>
-            <td>@item.StaffID</td>
+            <th>@item.StaffID</th>
             <td>@item.NameSurname</td>
             <td>@item.Title</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">GÜncelle</a></td>
-            <td><a href="#" class="btn btn-dark">Detaylar</a></td>
+            <td><a href="/Staff/DeleteStaff/@item.StaffID" class="btn mb-1 btn-danger">Delete <span class="btn-icon-right"><i class="fa fa-close"></i></span></a></td>
+            <td><a href="/Staff/UpdateStaff/@item.StaffID" class="btn mb-1 btn-primary">Update <span class="btn-icon-right"><i class="fa fa-upload color-success"></i></span></a></td>
+            <td><a href="#" class="btn mb-1 btn-info">Details <span class="btn-icon-right"><i class="icon-user gradient-4-text"></i></span></a></td>
         </tr>
     }
 </table>
-<a href="#" class="btn btn-info">Yeni Personel Girişi</a>
+<a href="/Staff/AddStaff/" class="btn btn-info">Add New Staff</a>
