@@ -38,7 +38,7 @@
                                 <td>@(((DateTime)item.Checkin).ToString("dd-MMM-yyyy"))</td>
                                 <td>@(((DateTime)item.CheckOut).ToString("dd-MMM-yyyy"))</td>
                                 <td><span class="badge badge-primary px-2">@item.Status</span></td>
-                                <td><a href="#" class="btn mb-1 btn-success">Confirm</a></td>
+                                <td><a href="/BookingAdmin/ApprovedReservation/@item.BookingID/" class="btn mb-1 btn-success">Confirm</a></td>
                                 <td><a href="#" class="btn mb-1 btn-danger">Cancel</a></td>
                                 <td><a href="#" class="btn mb-1 btn-primary">Add to Que</a></td>
                                 <td><a href="#" class="btn mb-1 btn-info">Update</a></td>
