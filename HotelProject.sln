@@ -9,17 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{8C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDoList", "ToDoList", "{23268864-A5A4-4D6D-B674-BD7DED21BE7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.WebApi", "ApiConsume\HotelProject.WebApi\HotelProject.WebApi.csproj", "{823FE813-5CFF-4A3B-B4A0-0D6D35BD0C60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.WebApi", "ApiConsume\HotelProject.WebApi\HotelProject.WebApi.csproj", "{823FE813-5CFF-4A3B-B4A0-0D6D35BD0C60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.EntityLayer", "ApiConsume\HotelProject.EntityLayer\HotelProject.EntityLayer.csproj", "{1F2C27ED-8484-4FAF-A43B-9AE0FE2A0632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.EntityLayer", "ApiConsume\HotelProject.EntityLayer\HotelProject.EntityLayer.csproj", "{1F2C27ED-8484-4FAF-A43B-9AE0FE2A0632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.DataAccessLayer", "ApiConsume\HotelProject.DataAccessLayer\HotelProject.DataAccessLayer.csproj", "{76144FF5-C93F-48F7-B185-FE298B975208}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DataAccessLayer", "ApiConsume\HotelProject.DataAccessLayer\HotelProject.DataAccessLayer.csproj", "{76144FF5-C93F-48F7-B185-FE298B975208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.BusinessLayer", "ApiConsume\HotelProject.BusinessLayer\HotelProject.BusinessLayer.csproj", "{1E1C6A41-3F43-40FE-B743-A4F543D5B2B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.BusinessLayer", "ApiConsume\HotelProject.BusinessLayer\HotelProject.BusinessLayer.csproj", "{1E1C6A41-3F43-40FE-B743-A4F543D5B2B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.DtoLayer", "ApiConsume\HotelProject.DtoLayer\HotelProject.DtoLayer.csproj", "{3CD5B888-0489-47AE-BB8E-104DE935D4B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DtoLayer", "ApiConsume\HotelProject.DtoLayer\HotelProject.DtoLayer.csproj", "{3CD5B888-0489-47AE-BB8E-104DE935D4B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.WebUI", "Frontend\HotelProject.WebUI\HotelProject.WebUI.csproj", "{22DFA492-63AE-417A-ABC9-0E12E5F8790F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.WebUI", "Frontend\HotelProject.WebUI\HotelProject.WebUI.csproj", "{22DFA492-63AE-417A-ABC9-0E12E5F8790F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{5908F9CC-EE8D-43D1-AA79-6475A456BB25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidApiConsume", "RapidApi\RapidApiConsume\RapidApiConsume.csproj", "{E5E5D820-E4A6-403B-AD2E-646B6C438510}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,10 @@ Global
 		{22DFA492-63AE-417A-ABC9-0E12E5F8790F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22DFA492-63AE-417A-ABC9-0E12E5F8790F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22DFA492-63AE-417A-ABC9-0E12E5F8790F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E5D820-E4A6-403B-AD2E-646B6C438510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E5D820-E4A6-403B-AD2E-646B6C438510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E5D820-E4A6-403B-AD2E-646B6C438510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E5D820-E4A6-403B-AD2E-646B6C438510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{1E1C6A41-3F43-40FE-B743-A4F543D5B2B3} = {69F7A9B2-47AE-4660-AA89-4E0639B008B5}
 		{3CD5B888-0489-47AE-BB8E-104DE935D4B1} = {69F7A9B2-47AE-4660-AA89-4E0639B008B5}
 		{22DFA492-63AE-417A-ABC9-0E12E5F8790F} = {8C81A814-1282-47B0-8721-956601F236B6}
+		{E5E5D820-E4A6-403B-AD2E-646B6C438510} = {5908F9CC-EE8D-43D1-AA79-6475A456BB25}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE5AC69F-5BF9-457B-A743-46FC8E5C23FB}
