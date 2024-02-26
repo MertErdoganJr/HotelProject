@@ -38,5 +38,7 @@ namespace HotelProject.WebUI.Controllers
             await client.PostAsync("http://localhost:11834/api/Contact", stringContent);
             return RedirectToAction("Index", "Default");
         }
+
+
     }
 }
