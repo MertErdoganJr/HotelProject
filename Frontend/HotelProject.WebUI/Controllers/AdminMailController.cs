@@ -16,6 +16,7 @@ namespace HotelProject.WebUI.Controllers
         [HttpPost]
         public IActionResult Index(AdminMailViewModel model)
         {
+            //Google Hesabı üzerinden izin verilip key eklenecek kısım
             MimeMessage mimeMessage = new MimeMessage();
             MailboxAddress mailboxAddressFrom = new MailboxAddress("HotelierAdmin", "bizim mailimiz");
             mimeMessage.From.Add(mailboxAddressFrom);
