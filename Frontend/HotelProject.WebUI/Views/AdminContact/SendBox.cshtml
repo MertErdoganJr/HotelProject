@@ -1,7 +1,7 @@
-﻿@model List<InboxContactDto>
+﻿@model List<ResultSendBoxDto>
 
 @{
-    ViewData["Title"] = "Inbox";
+    ViewData["Title"] = "SendBox";
     Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
 }
 
@@ -19,7 +19,7 @@
     <div role="toolbar" class="toolbar">
         <div class="btn-group">
             <button aria-expanded="false" data-toggle="dropdown" class="btn btn-dark dropdown-toggle" type="button">
-                Inbox <span class="caret m-l-5"></span>
+                Send Box <span class="caret m-l-5"></span>
             </button>
         </div>
     </div>
@@ -35,8 +35,8 @@
                         </div><span class="star-toggle ti-star"></span>
                     </div>
                     <div class="col-mail col-mail-2">
-                        <div class="subject">@item.Message.Substring(0, 120)</div>
-                        <div class="date">11:49 am</div>
+                        <div class="subject"><b>@item.Title |</b>  @item.ReceiverName (@item.ReceiverMail)</div>
+                        <div class="date">@(((DateTime)item.Date).ToString("dd-MMM-yyyy"))</div>
                     </div>
                 </a>
             </div>
